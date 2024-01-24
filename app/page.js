@@ -1,35 +1,46 @@
 import Image from "next/image";
+import Link from "next/link";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Home() {
   return (
-    <main className="bg-midnight grid min-h-screen items-center">
-      <header>
-        <div className="grid h-full justify-items-center  items-center grid-rows-2 gap-4">
-          <div className="rounded-t-lg p-2 bg-whine_transp border-double border-4 border-brown">
-            <Image
-              src="/person_tree.png"
-              alt="Next.js Logo"
-              width={280}
-              height={37}
-              priority
-            />
-          </div>
-          <div className="text1">
-            <h2>Salut, Je suis Sitan</h2>
-            <h1>Une Devellopeuse Web</h1>
-            <div className="flex gap-4">
-              <div className="rounded-t-lg p-2 bg-whine_transp border-double border-4 border-brown">
-                <a href="about.html">Plus sur moi</a>
-                <i className="bi bi-stars"></i>
-              </div>
-              <div className="rounded-t-lg p-2 bg-whine_transp border-double border-4 border-brown">
-                <a href="portefolio.html">Portfolio</a>
-                <i className="bi bi-stars"></i>
-              </div>
+    <header className="grid place-items-center">
+      <div className="header grid grid-cols-1 justify-center gap-0 justify-items-center">
+        <div className="rounded-tl-[95px] rounded-tr-[95px] border-3 border-double border-custom-brown bg-whine-transp flex justify-center">
+          <Image
+            src="/person_tree.png"
+            alt="Next.js Logo"
+            width={300}
+            height={500}
+            className="responsive-img"
+            priority
+          />
+        </div>
+        <div className="text-center">
+          <h2 className="font-bold">Salut, Je suis Sitan</h2>
+          <h1 className="font-bold">Une Devellopeuse Web</h1>
+          <div className="flex gap-4 justify-center">
+            <div className="flex-1 relative">
+              <Link
+                className="link_home inline-block rounded-tl-[95px] rounded-tr-[95px] px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown rounded-[55px] whitespace-nowrap"
+                href="/"
+              >
+                Plus sur moi
+              </Link>
+              <i className="absolute -top-[8px] left-[7px] text-custom-brown text-2xl bi bi-stars stars1"></i>
+            </div>
+            <div className="flex-1 relative">
+              <Link
+                className="link_home inline-block rounded-tl-[95px] rounded-tr-[95px] px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown rounded-[55px] whitespace-nowrap"
+                href="/"
+              >
+                Portfolio
+              </Link>
+              <i className="stars2 bi bi-stars absolute -top-[9px] left-[7px] text-custom-brown text-2xl"></i>
             </div>
           </div>
         </div>
-      </header>
-    </main>
+      </div>
+    </header>
   );
 }

@@ -50,9 +50,125 @@ body::after {
   background: url(../public/grain.png) #ffffff59;
   opacity: 0.4;
 }
+
 h2,
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   padding-bottom: 15px;
+}
+
+a {
+  @apply text-black transition-colors duration-200;
+}
+
+.link_home {
+  cursor: pointer;
+}
+
+a:hover,
+.link_home:hover {
+  @apply text-white;
+}
+
+.burger {
+  @apply block cursor-pointer;
+}
+
+.burger > div {
+  @apply h-1 w-9 bg-black my-1;
+}
+.burger > div {
+  @apply transition-transform ease-in-out duration-300;
+}
+
+.open .burger > div:nth-child(1) {
+  @apply rotate-45 translate-y-2;
+}
+
+.open .burger > div:nth-child(2) {
+  @apply opacity-0;
+}
+
+.open .burger > div:nth-child(3) {
+  @apply -rotate-45 -translate-y-1.5;
+}
+
+.nav_elmt1 {
+  @apply hidden md:flex;
+}
+
+.nav-wrapper.open .nav_elmt1 {
+  @apply flex gap-3 p-5 justify-center items-center  md:flex-row;
+}
+.nav-wrapper.open {
+  @apply h-36 bg-[rgb(222,199,181)];
+}
+.icon_box {
+  @apply border-2 border-double border-black grid place-items-center bg-whine_transp w-12 h-12 rounded-full;
+}
+.nav-wrapper {
+  height: 100px;
+}
+.logo {
+  width: 60px;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.687);
+  margin-right: auto;
+  transition: color 0.3s ease;
+}
+
+/**RESPONSIVE**/
+@media (min-width: 650px) {
+  .link_home {
+    padding: 10px 50px;
+  }
+  .responsive-img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger {
+    @apply hidden;
+  }
+
+  .nav_elmt1 {
+    @apply flex gap-4;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 60px;
+  }
+  .responsive-img {
+    width: 550px;
+  }
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+  .stars1 {
+    left: 37px;
+  }
+  .stars2 {
+    left: 41px;
+  }
+  p,
+  a {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .responsive-img {
+    width: 450px;
+  }
 }

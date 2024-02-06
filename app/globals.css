@@ -138,6 +138,13 @@ a:hover,
     @apply flex gap-4;
     align-items: center;
   }
+  .portefolio_items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 @media (min-width: 1200px) {
   .header {

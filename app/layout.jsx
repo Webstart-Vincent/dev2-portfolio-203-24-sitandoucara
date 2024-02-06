@@ -1,4 +1,3 @@
-import Head from "next/head";
 import "./globals.css";
 import Provider from "../components/provider";
 import Navbar from "../components/Navbar";
@@ -13,13 +12,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr-FR">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
       <body>
         <Provider>
           <Loader />

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,7 +47,7 @@ body::after {
   inset: 0;
   min-height: 100vh;
   min-width: 100vw;
-  z-index: 1;
+  /*z-index: 1;*/
   background: url(../public/grain.png) #ffffff59;
   opacity: 0.4;
 }
@@ -127,6 +128,9 @@ a:hover,
     width: 400px;
     height: auto;
   }
+  .choose {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -138,12 +142,12 @@ a:hover,
     @apply flex gap-4;
     align-items: center;
   }
+
+  .choose {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .portefolio_items {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1200px) {
@@ -161,7 +165,7 @@ a:hover,
   }
   h1,
   h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .stars1 {
     left: 37px;
@@ -172,6 +176,9 @@ a:hover,
   p,
   a {
     font-size: 22px;
+  }
+  .choose_valeur img {
+    width: 400px;
   }
 }
 @media (min-width: 1200px) {

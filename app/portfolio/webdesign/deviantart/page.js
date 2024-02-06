@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-export default function DeviantArt() {
+export default function DeviantArtPage() {
   return (
     <>
       <div className="plusweb2 p-2.5 grid gap-y-3 justify-items-start">
-        <div className="back_portfolio">
+        <div className="back_portfolio z-20">
           <Link
-            href="/"
+            href="/portfolio/webdesign"
             class="modal_closee_filtre inline-block rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5"
           >
             <i className="bi bi-chevron-left"></i>

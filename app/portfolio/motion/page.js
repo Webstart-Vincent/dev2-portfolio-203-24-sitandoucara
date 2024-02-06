@@ -2,43 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-export default function choose_webdesign() {
+export default function choose_motion() {
   return (
     <>
       <div className="">
-        <h1 className="title portfolio_title text-center">Webdesign</h1>
+        <h1 className="title portfolio_title text-center">Motion</h1>
         <div className="choose grid grid-cols-[1fr] gap-5 p-2.5 justify-items-center">
           <Link href="/portfolio/webdesign/deviantart" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5 ">
               <Image
-                src="/Webdesign/img1.png"
+                src="/Motion/img1.png"
                 alt="photo design site internet"
                 width={300}
                 height={200}
               />
               <div className="choose_val">
-                <h2>Deviant Art</h2>
+                <h2>Heart Tunnel</h2>
                 <Link
                   href="/portfolio/webdesign/deviantart"
-                  className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
-                >
-                  Voir le projet
-                </Link>
-              </div>
-            </div>
-          </Link>
-          <Link href="/portfolio/webdesign/festival">
-            <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
-              <Image
-                src="/Webdesign/img3.png"
-                alt="photo design site internet"
-                width={300}
-                height={200}
-              />
-              <div className="choose_val">
-                <h2>Why Festival</h2>
-                <Link
-                  href="/portfolio/webdesign/festival"
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet
@@ -49,13 +30,13 @@ export default function choose_webdesign() {
           <Link href="/">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
-                src="/Webdesign/img5.png"
+                src="/Motion/img2.png"
                 alt="photo design site internet"
                 width={300}
                 height={200}
               />
               <div className="choose_val">
-                <h2>Mini Site</h2>
+                <h2>Bouteille</h2>
                 <Link
                   href="/"
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
@@ -68,13 +49,32 @@ export default function choose_webdesign() {
           <Link href="/">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
-                src="/Webdesign/img4.png"
+                src="/Motion/img3.PNG"
                 alt="photo design site internet"
                 width={300}
                 height={200}
               />
               <div className="choose_val">
-                <h2>Netflix</h2>
+                <h2>Flacon</h2>
+                <Link
+                  href="/"
+                  className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
+                >
+                  Voir le projet
+                </Link>
+              </div>
+            </div>
+          </Link>
+          <Link href="/">
+            <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
+              <Image
+                src="/Motion/img4.PNG"
+                alt="photo design site internet"
+                width={300}
+                height={200}
+              />
+              <div className="choose_val">
+                <h2>Crème</h2>
                 <Link
                   href="/"
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
@@ -88,13 +88,13 @@ export default function choose_webdesign() {
           <Link href="/">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
-                src="/Webdesign/luxyryhome.png"
+                src="/Motion/img5.PNG"
                 alt="photo design site internet"
                 width={300}
                 height={200}
               />
               <div className="choose_val">
-                <h2>Luxury Home</h2>
+                <h2>Poster</h2>
                 <Link
                   href="/"
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
@@ -107,70 +107,13 @@ export default function choose_webdesign() {
           <Link href="/">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
-                src="/Webdesign/img6.png"
+                src="/Motion/img6.png"
                 alt="photo design site internet"
                 width={300}
                 height={200}
               />
               <div className="choose_val">
-                <h2>Twitter</h2>
-                <Link
-                  href="/"
-                  className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
-                >
-                  Voir le projet
-                </Link>
-              </div>
-            </div>
-          </Link>
-          <Link href="/">
-            <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
-              <Image
-                src="/Webdesign/img2.png"
-                alt="photo design site internet"
-                width={300}
-                height={200}
-              />
-              <div className="choose_val">
-                <h2>Web Tv</h2>
-                <Link
-                  href="/"
-                  className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
-                >
-                  Voir le projet
-                </Link>
-              </div>
-            </div>
-          </Link>
-          <Link href="/">
-            <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
-              <Image
-                src="/Webdesign/wikipedia.png"
-                alt="photo design site internet"
-                width={300}
-                height={200}
-              />
-              <div className="choose_val">
-                <h2>Wikipedia</h2>
-                <Link
-                  href="/"
-                  className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
-                >
-                  Voir le projet
-                </Link>
-              </div>
-            </div>
-          </Link>
-          <Link href="/">
-            <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
-              <Image
-                src="/Webdesign/guitard.png"
-                alt="photo design site internet"
-                width={300}
-                height={200}
-              />
-              <div className="choose_val">
-                <h2>Guitar Part</h2>
+                <h2>Love Temple</h2>
                 <Link
                   href="/"
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"

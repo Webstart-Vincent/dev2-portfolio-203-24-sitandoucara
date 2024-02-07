@@ -32,7 +32,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/portfolio/webdesign/festival">
+          <Link href="/portfolio/webdesign/festival" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/img3.png"
@@ -51,7 +51,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/img5.png"
@@ -62,7 +62,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Mini Site</h2>
                 <Link
-                  href="/"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet
@@ -70,7 +70,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/img4.png"
@@ -81,7 +81,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Netflix</h2>
                 <Link
-                  href="/"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet
@@ -90,7 +90,7 @@ export default function choose_webdesign() {
             </div>
           </Link>
 
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/luxyryhome.png"
@@ -101,7 +101,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Luxury Home</h2>
                 <Link
-                  href="/"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet
@@ -109,7 +109,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/img6.png"
@@ -120,7 +120,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Twitter</h2>
                 <Link
-                  href="/"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet
@@ -128,7 +128,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/img2.png"
@@ -139,7 +139,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Web Tv</h2>
                 <Link
-                  href="/"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet
@@ -147,7 +147,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/wikipedia.png"
@@ -166,7 +166,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/guitard.png"
@@ -177,7 +177,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Guitar Part</h2>
                 <Link
-                  href="/"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet

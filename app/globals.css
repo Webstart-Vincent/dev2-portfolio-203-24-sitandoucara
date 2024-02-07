@@ -84,7 +84,7 @@ a:hover,
 }
 
 .open .burger > div:nth-child(1) {
-  @apply rotate-45 translate-y-2;
+  @apply rotate-45 translate-y-2.5;
 }
 
 .open .burger > div:nth-child(2) {
@@ -131,6 +131,9 @@ a:hover,
   .choose {
     grid-template-columns: 1fr 1fr;
   }
+  .portefolio_items {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -146,9 +149,6 @@ a:hover,
   .choose {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .portefolio_items {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -159,6 +159,12 @@ a:hover,
     align-items: center;
     padding: 10px 20px;
     gap: 60px;
+  }
+  .frame {
+    width: 22rem;
+  }
+  .portefolio_items {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .responsive-img {
     width: 550px;

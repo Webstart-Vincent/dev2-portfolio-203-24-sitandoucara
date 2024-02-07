@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <h2 className="font-bold">Salut, Je suis Sitan</h2>
-          <h1 className="font-bold">Une Devellopeuse Web</h1>
+          <h1 className="font-bold">Une Développeuse Web</h1>
           <div className="flex gap-4 justify-center">
             <div className="flex-1 relative">
               <Link

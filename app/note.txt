@@ -4,3 +4,7 @@
       </head>-->
 
       UseEffect ( .MatchMedia('screen ans (min-width: 640px)') ::: Pour gerer l'apparition de la nav quand on est en grand ecran et que le burger est ouvert
+
+
+
+      Développeuse Web et Webdesigner Junior, je combine la maîtrise de langages tels que React, JavaScript, PHP avec une expertise dans l'utilisation de logiciels comme Figma et la suite Adobe. Mon approche multidisciplinaire me permet de créer des solutions web innovantes et esthétiquement plaisantes, offrant une expérience utilisateur riche et intuitive. Explorez mon portfolio pour découvrir une variété de projets qui reflètent mon engagement envers l'excellence en conception et développement web.

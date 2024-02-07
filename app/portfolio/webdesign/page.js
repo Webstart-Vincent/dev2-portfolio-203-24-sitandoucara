@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+export const metadata = {
+  title: "Portfolio - Webdesign",
+  description: "portfolio",
+};
+
 export default function choose_webdesign() {
   return (
     <>

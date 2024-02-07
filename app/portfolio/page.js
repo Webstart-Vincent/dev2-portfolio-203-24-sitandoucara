@@ -1,6 +1,11 @@
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+export const metadata = {
+  title: "Mes compétences",
+  description: "portfolio",
+};
+
 export default function Portfolio() {
   return (
     <header className="grid place-items-center">

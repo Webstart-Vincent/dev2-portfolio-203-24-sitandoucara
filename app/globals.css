@@ -136,7 +136,7 @@ a:hover,
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 748px) {
   .burger {
     @apply hidden;
   }
@@ -148,6 +148,32 @@ a:hover,
 
   .choose {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img_dev_destop {
+    width: 550px;
+  }
+  .img_dev_mobile {
+    width: 450px;
+  }
+}
+@media (min-width: 1000px) {
+  h1,
+  h2 {
+    font-size: 35px;
+  }
+  p,
+  a {
+    font-size: 20px;
+  }
+
+  .plusweb2 {
+    padding: 30px;
+  }
+  .img_dev_destop {
+    width: 800px;
+  }
+  .img_dev_mobile {
+    width: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -186,9 +212,23 @@ a:hover,
   .choose_valeur img {
     width: 400px;
   }
-}
-@media (min-width: 1200px) {
-  .responsive-img {
+  .plusweb2 {
+    padding: 30px;
+  }
+  .img_dev_destop {
+    width: 850px;
+  }
+  .responsive-img,
+  .img_dev_mobile {
     width: 450px;
+  }
+}
+@media (min-width: 1300px) {
+  .img_dev_destop {
+    width: 950px;
+  }
+
+  .img_dev_mobile {
+    width: 500px;
   }
 }

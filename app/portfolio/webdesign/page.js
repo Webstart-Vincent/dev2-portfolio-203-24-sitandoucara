@@ -32,7 +32,7 @@ export default function choose_webdesign() {
               </div>
             </div>
           </Link>
-          <Link href="/portfolio/webdesign/festival" className="z-20">
+          <Link href="" className="z-20">
             <div className="choose_valeur rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5">
               <Image
                 src="/Webdesign/img3.png"
@@ -43,7 +43,7 @@ export default function choose_webdesign() {
               <div className="choose_val">
                 <h2>Why Festival</h2>
                 <Link
-                  href="/portfolio/webdesign/festival"
+                  href=""
                   className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown whitespace-nowrap"
                 >
                   Voir le projet

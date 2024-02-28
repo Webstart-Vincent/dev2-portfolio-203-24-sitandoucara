@@ -2,14 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+export const metadata = {
+  title: "Webdesign - deviant art",
+  description: "portfolio",
+};
+
 export default function DeviantArtPage() {
   return (
     <>
-      <div className="plusweb2 p-2.5 grid gap-y-3 justify-items-start">
+      <div className="plusweb2 p-3 grid gap-y-3 justify-items-start">
         <div className="back_portfolio z-20">
           <Link
             href="/portfolio/webdesign"
-            class="modal_closee_filtre inline-block rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5"
+            className="modal_closee_filtre inline-block rounded-2xl border-3 border-double border-custom-brown bg-whine-transp p-2.5"
           >
             <i className="bi bi-chevron-left"></i>
           </Link>
@@ -20,7 +25,7 @@ export default function DeviantArtPage() {
             <h1>Deviant Art Refonte</h1>
             <p>
               Projet scolaire, il avait pour but de proposer une refonte de la
-              home Page du site deviant art. La version responsive est
+              home Page du site deviant art. <br /> La version responsive est
               disponible sur mon figma. Voir le lien ci-dessous.
             </p>
             <p>
@@ -34,6 +39,7 @@ export default function DeviantArtPage() {
 
         <div className="mockupweb1 p-2.5 bg-whine-transp rounded-2xl border-3 border-double border-custom-brown">
           <Image
+            className="img_dev_destop"
             src="/Webdesign/Deviant_art1.png"
             alt="photo1"
             width={300}
@@ -45,6 +51,7 @@ export default function DeviantArtPage() {
         <div className="describ_project2 p-2.5 bg-whine-transp rounded-2xl border-3 border-double border-custom-brown">
           <div>
             <Image
+              className="img_dev_mobile"
               src="/Webdesign/Deviant_art2.png"
               alt="image2"
               width={300}

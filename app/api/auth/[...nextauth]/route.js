@@ -1,11 +1,13 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
+const allowedEmails = [process.env.EMAIL_ADMIN, process.env.EMAIL_VINCENT];
+
 const authOptions = {
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
     }),
   ],
 
@@ -17,10 +19,11 @@ const authOptions = {
 
   callbacks: {
     async signIn({ user: { email } }) {
-      return email === process.env.EMAIL_ADMIN;
+      return allowedEmails.includes(email);
     },
 
     async redirect({ url, baseUrl }) {
+      console.log(baseUrl);
       return baseUrl + "/dashboard";
     },
 
@@ -31,6 +34,5 @@ const authOptions = {
 };
 
 const handler = NextAuth(authOptions);
-
 //export { handler as GET, handler as POST, authOptions };
 export { handler as GET, handler as POST };

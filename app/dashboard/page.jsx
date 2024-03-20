@@ -1,28 +1,36 @@
 "use client";
+import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Dashboard = () => {
+  const [projects, setProjects] = useState([]);
   const { data: session, status } = useSession();
-  const router = useRouter();
 
-  if (status == "unauthenticated") {
-    router.push("/");
-  }
-  const projects = [
-    { id: 1, title: "Projet 1", slug: "projet-1" },
-    { id: 2, title: "Projet 2", slug: "projet-2" },
-  ];
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      window.location.href = "/";
+    } else if (status === "authenticated") {
+      fetch("/api/projects/page")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Data from API:", data);
+          if (data && data.success) {
+            setProjects(data.data);
+          }
+        })
+        .catch((err) => console.error("Error loading projects", err));
+    }
+  }, [status]);
 
-  if (status == "authenticated") {
+  if (status === "authenticated") {
     return (
       <div className="z-20 p-2">
         <h1>Tableau de bord</h1>
         <p>Utilisateur : {session?.user.name ?? "Pas de session"}</p>
         <ul>
           {projects.map((project) => (
-            <li key={project.id}>{project.title}</li>
+            <li key={project._id}>{project.title}</li>
           ))}
         </ul>
         <Link
@@ -34,6 +42,7 @@ const Dashboard = () => {
       </div>
     );
   }
+  return null;
 };
 
 export default Dashboard;

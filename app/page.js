@@ -32,7 +32,7 @@ export default function Home() {
             <div className="flex-1 relative z-20">
               <Link
                 className="link_home  inline-block rounded-tl-[95px] rounded-tr-[95px] px-[25px] py-[10px] text-center bg-whine-transp border-3 border-double border-custom-brown rounded-[55px] whitespace-nowrap"
-                href="/portfolio"
+                href="/works"
               >
                 Portfolio
               </Link>

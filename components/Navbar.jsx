@@ -34,7 +34,7 @@ function NavBar() {
           <Link href="" className="nav-link">
             À propos
           </Link>
-          <Link href="/portfolio" className="nav-link">
+          <Link href="/works" className="nav-link">
             Portfolio
           </Link>
           <Link href="" className="nav-link">

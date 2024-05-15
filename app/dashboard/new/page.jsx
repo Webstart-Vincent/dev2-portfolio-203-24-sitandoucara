@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { CldUploadButton } from "next-cloudinary";
-import { createProject } from "@/hooks/useCreateProjects";
+import { createProject } from "@/helper/CreateProjects";
 
 const New = () => {
   const { data: session, status } = useSession();

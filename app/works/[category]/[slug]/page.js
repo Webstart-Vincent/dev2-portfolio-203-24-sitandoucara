@@ -1,6 +1,6 @@
 import { connectToDatabase } from "@/lib/mongodb";
 import projectModel from "@/models/project-model";
-import { GetProjectDetails } from "@/hooks/useGetProject";
+import { GetProjectDetails } from "@/helper/GetProject";
 import { PageDetails } from "@/components/PageDetails";
 
 export async function generateStaticParams() {
@@ -22,6 +22,7 @@ export default async function Page({ params }) {
     slug: projectDetails.slug,
     text: projectDetails.text,
     imageUrl: projectDetails.imageUrl,
+    category: projectDetails.category,
   };
 
   return <PageDetails project={detailedProject} />;

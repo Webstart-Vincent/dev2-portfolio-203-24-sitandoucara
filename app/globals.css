@@ -119,6 +119,8 @@ a:hover,
   transition: color 0.3s ease;
 }
 
+/***contact***/
+
 /**RESPONSIVE**/
 @media (min-width: 650px) {
   .link_home {

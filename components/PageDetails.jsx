@@ -3,10 +3,10 @@ import Link from "next/link";
 import { CldImage } from "next-cloudinary";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-export const metadata = {
+/*export const metadata = {
   title: "projet",
   description: "projet description",
-};
+};*/
 
 export const PageDetails = ({ project }) => {
   return (

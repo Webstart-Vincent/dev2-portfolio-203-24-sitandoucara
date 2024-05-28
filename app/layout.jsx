@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
           <div className="circle"></div>
           <div className="min-h-screen grid grid-rows-[auto,1fr,auto]">
             <Navbar />
-
             {children}
             <Footer />
           </div>

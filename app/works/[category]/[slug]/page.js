@@ -2,6 +2,7 @@ import { connectToDatabase } from "@/lib/mongodb";
 import projectModel from "@/models/project-model";
 import { GetProjectDetails } from "@/helper/GetProject";
 import { PageDetails } from "@/components/PageDetails";
+import Head from "next/head";
 
 export async function generateStaticParams() {
   await connectToDatabase();
@@ -22,8 +23,27 @@ export default async function Page({ params }) {
     slug: projectDetails.slug,
     text: projectDetails.text,
     imageUrl: projectDetails.imageUrl,
+    seoDescription: projectDetails.seoDescription,
+    seoTitle: projectDetails.seoTitle,
     category: projectDetails.category,
   };
 
-  return <PageDetails project={detailedProject} />;
+  return (
+    <>
+      <Head>
+        <title>{detailedProject.seoTitle || detailedProject.title}</title>
+        <meta name="description" content={detailedProject.seoDescription} />
+        <meta
+          property="og:title"
+          content={detailedProject.seoTitle || detailedProject.title}
+        />
+        <meta
+          property="og:description"
+          content={detailedProject.seoDescription}
+        />
+        <meta property="og:image" content={detailedProject.imageUrl} />
+      </Head>
+      <PageDetails project={detailedProject} />
+    </>
+  );
 }

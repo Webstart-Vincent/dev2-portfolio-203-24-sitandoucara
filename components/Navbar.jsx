@@ -37,7 +37,7 @@ function NavBar() {
           <Link href="/works" className="nav-link">
             Portfolio
           </Link>
-          <Link href="" className="nav-link">
+          <Link href="/contact" className="nav-link">
             Contact
           </Link>
           <div className="icon_box">

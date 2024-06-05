@@ -5,7 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -120,15 +119,23 @@ a:hover,
 }
 
 /***contact***/
+.img_dev_destop {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+}
 
 /**RESPONSIVE**/
 @media (min-width: 650px) {
   .link_home {
     padding: 10px 50px;
-  }
-  .responsive-img {
-    width: 400px;
-    height: auto;
   }
   .choose {
     grid-template-columns: 1fr 1fr;
@@ -151,11 +158,8 @@ a:hover,
   .choose {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .img_dev_destop {
-    width: 550px;
-  }
   .img_dev_mobile {
-    width: 450px;
+    width: 550px;
   }
 }
 @media (min-width: 1000px) {
@@ -170,9 +174,6 @@ a:hover,
 
   .plusweb2 {
     padding: 30px;
-  }
-  .img_dev_destop {
-    width: 800px;
   }
   .img_dev_mobile {
     width: 400px;
@@ -217,19 +218,8 @@ a:hover,
   .plusweb2 {
     padding: 30px;
   }
-  .img_dev_destop {
-    width: 850px;
-  }
-  .responsive-img,
-  .img_dev_mobile {
-    width: 450px;
-  }
 }
 @media (min-width: 1300px) {
-  .img_dev_destop {
-    width: 950px;
-  }
-
   .img_dev_mobile {
     width: 500px;
   }

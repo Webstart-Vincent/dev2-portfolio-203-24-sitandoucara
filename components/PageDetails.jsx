@@ -33,15 +33,16 @@ export const PageDetails = ({ project }) => {
         </div>
       </div>
 
-      <div className="mockupweb1 p-2.5 bg-whine-transp rounded-2xl border-3 border-double border-custom-brown">
+      <div className="image-container p-2.5 bg-whine-transp rounded-2xl border-3 border-double border-custom-brown">
         <CldImage
           className="z-20 img_dev_destop"
           src={project.imageUrl}
           alt="Image projet"
-          width={300}
-          height={200}
+          width={900}
+          height={900}
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
-        <div className="one_slide"></div>
       </div>
     </div>
   );

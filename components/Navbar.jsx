@@ -17,7 +17,13 @@ function NavBar() {
         </Link>
 
         <div className="md:hidden">
-          <button className="outline-none ring-0" onClick={toggleNav}>
+          <button
+            aria-label="toggle button"
+            id="theme-brown--button"
+            data-tooltip-target="toggle-projet"
+            className="outline-none ring-0"
+            onClick={toggleNav}
+          >
             <div className={`burger ${navbar ? "open" : ""}`}>
               <div></div>
               <div></div>

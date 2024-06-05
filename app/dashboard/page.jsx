@@ -59,7 +59,12 @@ const Dashboard = async () => {
                   <p>Catégorie: {project.category}</p>
                   <p>SEO Description: {project.seoDescription}</p>
                   <p>SEO Title: {project.seoTitle}</p>
-                  <button className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-red-800 text-white border-3 border-double border-custom-brown whitespace-nowrap">
+                  <button
+                    aria-label="delete button"
+                    id="theme-brown--button"
+                    data-tooltip-target="import-delete"
+                    className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-red-800 text-white border-3 border-double border-custom-brown whitespace-nowrap"
+                  >
                     Supprimer
                   </button>
                   <button className="btn inline-block rounded-2xl px-[25px] py-[10px] text-center bg-grey-300 text-white border-3 border-double border-custom-brown whitespace-nowrap">

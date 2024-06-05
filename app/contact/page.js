@@ -141,6 +141,9 @@ export default function Contact() {
 
           <div className="submit-btn">
             <button
+              aria-label="send button"
+              id="theme-brown--button"
+              data-tooltip-target="import-img-projet"
               type="submit"
               className="p-3 rounded-full bg-whine_transp border-2 border-double border-brown text-brown transition-colors duration-200 hover:text-white hover:bg-brown"
             >

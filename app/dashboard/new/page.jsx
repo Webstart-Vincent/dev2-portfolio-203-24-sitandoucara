@@ -146,6 +146,9 @@ const New = () => {
           Importer une image
         </CldUploadButton>
         <button
+          aria-label="import img button"
+          id="theme-brown--button"
+          data-tooltip-target="import-img-projet"
           type="submit"
           className="z-20 btn hover:bg-white inline-block rounded-2xl bg-whine-transp border-3 border-double border-custom-brown"
         >
